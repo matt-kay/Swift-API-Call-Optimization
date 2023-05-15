@@ -11,6 +11,8 @@ struct HomeView: View {
     @State var loading : Bool = false
     @State var fetchTask : Task<(),Never>? = nil
     
+    @State var mutationTask : Task<(),Never>? = nil
+    
     var body: some View {
         Group{
             if loading{
@@ -20,8 +22,20 @@ struct HomeView: View {
             }
         }
         .onAppear{
-                fetch()
+            mutationTask = Task{
+                loading = true
+                let response = try? await HTTPService.instance.mutate(of: PostDoc.self, request: PostMutations.instance.deletePostMutation(postId: 23))
+                loading = false
+                
+                if response?.status == .success{
+                    print(response?.data ?? "")
+                }
+                
+                if response?.status == .error{
+                    print(response?.errorMessage ?? "")
+                }
             }
+      }
     }
     
     func fetch(){

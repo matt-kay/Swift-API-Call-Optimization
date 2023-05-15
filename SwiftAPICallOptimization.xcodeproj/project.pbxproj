@@ -11,6 +11,7 @@
 		CE7152922A0B8A1D00C046DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7152912A0B8A1D00C046DA /* ContentView.swift */; };
 		CE7152942A0B8A1E00C046DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7152932A0B8A1E00C046DA /* Assets.xcassets */; };
 		CE7152972A0B8A1E00C046DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7152962A0B8A1E00C046DA /* Preview Assets.xcassets */; };
+		CEB7140F2A12DCF900075BAF /* PostMutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7140E2A12DCF900075BAF /* PostMutations.swift */; };
 		CED2F4642A0C528C0023BE2E /* PromiseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2F4632A0C528C0023BE2E /* PromiseModel.swift */; };
 		CED2F4672A0C55530023BE2E /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2F4662A0C55530023BE2E /* HTTPService.swift */; };
 		CED2F46B2A0C58D20023BE2E /* PostQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2F46A2A0C58D20023BE2E /* PostQueries.swift */; };
@@ -24,6 +25,7 @@
 		CE7152912A0B8A1D00C046DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE7152932A0B8A1E00C046DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7152962A0B8A1E00C046DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEB7140E2A12DCF900075BAF /* PostMutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMutations.swift; sourceTree = "<group>"; };
 		CED2F4632A0C528C0023BE2E /* PromiseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseModel.swift; sourceTree = "<group>"; };
 		CED2F4662A0C55530023BE2E /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
 		CED2F46A2A0C58D20023BE2E /* PostQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostQueries.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		CED2F4692A0C58B30023BE2E /* mutations */ = {
 			isa = PBXGroup;
 			children = (
+				CEB7140E2A12DCF900075BAF /* PostMutations.swift */,
 			);
 			path = mutations;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB7140F2A12DCF900075BAF /* PostMutations.swift in Sources */,
 				CED2F4642A0C528C0023BE2E /* PromiseModel.swift in Sources */,
 				CED2F4672A0C55530023BE2E /* HTTPService.swift in Sources */,
 				CE7152922A0B8A1D00C046DA /* ContentView.swift in Sources */,

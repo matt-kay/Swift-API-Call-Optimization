@@ -19,3 +19,19 @@ struct PostDoc : Codable {
         case body
     }
 }
+
+struct PostInput : Codable{
+    var id : Int?
+    let title : String
+    let body : String
+    let userId : Int
+}
+
+struct UpdatePostInput : Codable{
+    var id : Int?
+    var title : String?
+    var body : String?
+    var userId : Int?
+}
+
+
